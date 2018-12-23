@@ -1,0 +1,138 @@
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 1.5em;
+	/*border: 1px solid black;*/
+}
+
+.btnRooms, .btnUsers {
+	border: none;
+	height: 75px;
+	width: 75px;
+	cursor: pointer;
+	border: 5px solid #b0e0e6;
+	background-color: white;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+
+.btnRooms:hover, .btnUsers:hover {
+	background-color: #b0e0e6;
+}
+
+.btnRooms img, .btnUsers img{
+	height: auto;
+	width: 100%;
+}
+
+.roomName {
+	align-self: center;
+	background-color: #b0e0e6;
+	padding: 10px;
+	border-radius: 10px;
+	overflow: hidden; /*???*/
+	width: 100px;/*???*/
+}
+
+.plate {
+	background-color: #f0f8ff;
+	border-radius: 10px;
+	overflow-y: scroll;
+	padding: 10px;
+	/*border: 1px solid black;*/
+	height: 1fr;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.inputMessage {
+	font-size: 1.2em;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: #b0e0e6;
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.sendMesForm {
+	display: flex;
+}
+
+.sendMesForm button {
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	border: 3px solid #b0e0e6;
+	background-color: white;
+	margin-left: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.SignInScreen, .RoomsScreen, .UsersScreen {
+	/*border: 1px solid black;*/
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
+
+.SignInScreen input {
+	font-size: 0.8em;
+	padding: 5px;
+	border: 3px solid #b0e0e6;
+	border-radius: 10px;
+	margin: 10px 0;
+}
+
+.SignInScreen label {
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.SignInScreen button, .RoomsScreen button , .UsersScreen button{
+	background-color: #b0e0e6;
+	cursor: pointer;
+	border: none;
+	font-size: 0.8em;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.scrollRooms, .scrollUsers {
+	height: 70%;
+	overflow-y: scroll;
+	margin: 10px 0;
+}
+
+.scrollRooms button{
+	background-color: white;
+	display: block;
+}
+
+.authorName {
+	color: grey;
+}
+
+.messageCloud {
+	background-color: #b0e0e6;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 1.5em;
+	margin-bottom: 10px; 
+}
+
+.rightFloat {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+/*надо добавить media query для маленьких экранов для SignInScreen!*/
