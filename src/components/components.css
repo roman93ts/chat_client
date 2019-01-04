@@ -4,9 +4,17 @@
 	justify-content: space-between;
 	font-size: 1.5em;
 	/*border: 1px solid black;*/
+	align-items: center;
 }
 
-.btnRooms, .btnUsers {
+.nameAndVideo {
+	display: flex;
+	flex-direction: column;
+	/*border: 1px solid black;*/
+	align-items: center;
+}
+
+.btnRooms, .btnUsers, .btnVideo {
 	border: none;
 	height: 75px;
 	width: 75px;
@@ -17,22 +25,18 @@
 	transition: all 0.5s;
 }
 
-.btnRooms:hover, .btnUsers:hover {
+.btnRooms:hover, .btnUsers:hover, .btnVideo:hover {
 	background-color: #b0e0e6;
 }
 
-.btnRooms img, .btnUsers img{
+.btnRooms img, .btnUsers img, .btnVideo img{
 	height: auto;
 	width: 100%;
 }
 
 .roomName {
 	align-self: center;
-	background-color: #b0e0e6;
-	padding: 10px;
-	border-radius: 10px;
-	overflow: hidden; /*???*/
-	width: 100px;/*???*/
+	overflow: hidden;
 }
 
 .plate {
@@ -134,5 +138,3 @@
 	flex-direction: column;
 	align-items: flex-end;
 }
-
-/*надо добавить media query для маленьких экранов для SignInScreen!*/
