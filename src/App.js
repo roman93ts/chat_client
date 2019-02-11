@@ -17,7 +17,7 @@ class App extends Component {
       message: '',
       messages: [],
       route: 'signin',
-      currentRoom: '#Global',
+      currentRoom: 'Global',
       rooms: []
     };
     this.socket = io('localhost:3001');
@@ -129,7 +129,6 @@ class App extends Component {
   	this.setState({route: 'chat',currentRoom: roomName});
   }
   //---------RoomsScreen---End---------------------
-  
 
   // onRouteChange = (data) => {
   //   this.setState({route: data})
@@ -150,10 +149,12 @@ class App extends Component {
                     // onRouteChange = {this.onRouteChange}
                     currentRoom = {this.state.currentRoom}
                     onUsersList = {this.onUsersList}
-
+                    // onVideoCall = {this.onVideoCall}
         />
         <MessagePlate arrayMessages = {this.state.messages}
                       currentUser = {this.state.username}
+                      currentRoom = {this.state.currentRoom}
+                      // videoStatus = {this.state.videoStatus}
         />
         <InputText  onInputChange = {this.onInputChange} // набор сообщения
                     onSendMessage = {this.onSendMessage} // отправка сообщения
